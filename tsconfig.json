@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src", // 모듈의 기본 경로를 설정합니다. 상대 경로 모듈 가져오기 시의 기준 경로입니다.
+    "outDir": "./dist", // 컴파일된 파일들이 저장될 출력 디렉토리입니다.
+    "esModuleInterop": true,  // CommonJS와 ES 모듈 간의 호환성을 지원합니다 (import/export 구문 사용 시 호환성 제공).
+    "target": "ES2022", // JavaScript의 버전 목표를 설정합니다. ES2019는 ECMAScript 2019 표준을 목표로 합니다.
+    "module": "CommonJS",  // 모듈 시스템을 CommonJS로 설정합니다. 이는 Node.js에서 사용되는 모듈 시스템입니다.
+    "declaration": true,   // 타입 정의 파일(.d.ts)을 생성합니다. 이 파일은 TypeScript 타입 정보를 포함합니다.
+    "forceConsistentCasingInFileNames": true, // 파일 및 디렉토리 이름의 대소문자 일관성을 강제합니다. 운영 체제에 따라 다른 파일명 대소문자 인식 문제를 방지합니다.
+    "isolatedModules": true, // 개별 파일을 독립된 모듈로 처리합니다. Babel과 같은 도구와의 호환성을 위한 설정입니다.
+    "moduleResolution": "node",  // 모듈 해석 전략을 Node.js 방식으로 설정합니다.
+    "preserveWatchOutput": true,  // watch 모드에서 오류를 수정한 후에도 출력을 유지합니다.
+    "skipLibCheck": true,  // 라이브러리 파일(.d.ts)의 타입 검사 생략합니다. 컴파일 속도를 높일 수 있습니다.
+    "allowJs": true,  // JavaScript 파일의 컴파일을 허용합니다.
+    "strict": true,  // 엄격한 타입 검사 옵션을 활성화합니다. TypeScript에서 제공하는 모든 엄격 모드 옵션을 포함합니다.
+    // "noEmit": true, // 이거 키면 컴파일 안됨
+    "noEmitOnError": true,  // 오류가 있는 경우, 컴파일러가 출력을 생성하지 않도록 합니다.
+    "experimentalDecorators": true,  // 실험적인 데코레이터 기능을 활성화합니다.
+    "emitDecoratorMetadata": true,  // 데코레이터를 사용할 때 메타데이터를 출력합니다.
+    "resolveJsonModule": true,  // JSON 모듈을 가져올 수 있도록 허용합니다.
+    "removeComments": true,  // 컴파일된 출력에서 주석을 제거합니다.
+    "noErrorTruncation": true,  // 오류 메시지를 완전히 출력합니다. 기본적으로 긴 오류 메시지는 잘려서 표시됩니다.
+    "sourceMap": true,  // JavaScript 파일과 TypeScript 소스 코드 간의 매핑 정보를 생성합니다. 디버깅 시 유용합니다.
+    "inlineSources": true  // 소스 맵 파일에 TypeScript 소스 코드를 인라인으로 포함합니다. 디버깅에 사용됩니다.
+  },
+  "include": ["src/**/*"],  // 포함할 파일 및 디렉토리 패턴입니다.
+  "exclude": ["node_modules"]  // 제외할 파일 및 디렉토리 패턴입니다.
+}

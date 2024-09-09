@@ -1,0 +1,33 @@
+{
+  "name": "@jykang/performancejs",
+  "version": "1.0.0",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "vite build",
+    "start": "node dist/index.cjs",
+    "dev": "ts-node src/index.ts",
+    "test": "jest"
+  },
+  "license": "MIT",
+  "private": false,
+  "repository": "https://github.com/titaniper/performancejs",
+  "dependencies": {
+    "typeorm": "^0.3.20",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.2.0",
+    "vite": "^4.0.0",
+    "vite-plugin-dts": "^4.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "commonjs",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  }
+}
