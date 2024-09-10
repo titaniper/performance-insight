@@ -14,6 +14,7 @@
   "private": false,
   "repository": "https://github.com/titaniper/performancejs",
   "dependencies": {
+    "axios": "^1.7.7",
     "typeorm": "^0.3.20",
     "typescript": "^5.4.5"
   },
